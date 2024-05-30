@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/frame.css">
+    <link rel="stylesheet" href="/css/setting.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Setting</title>
+</head>
+<body>
+    <section class="flex">
+        <div class="side">
+            <h3 class="position capitalize text-c fit">elzero</h3>
+            <ul class="list">
+                <li>
+                    <a href="index.html" class="black transition capitalize flex align position" data-info="dashboard">
+                        <i class="fa-regular fa-chart-bar fa-fw"></i>
+                        <span>dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="setting.html" class="black transition capitalize flex align position" data-info="setting">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <span>setting</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html" class="black transition capitalize flex align position" data-info="profile">
+                        <i class="fa-regular fa-user fa-fw"></i>
+                        <span>profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="projects.html" class="black transition capitalize flex align position" data-info="projects">
+                        <i class="fa-solid fa-diagram-project fa-fw"></i>
+                        <span>projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="courses.html" class="black transition capitalize flex align position" data-info="courses">
+                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                        <span>courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="friends.html" class="black transition capitalize flex align position" data-info="friends">
+                        <i class="fa-regular fa-circle-user fa-fw"></i>
+                        <span>friends</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="files.html" class="black transition capitalize flex align position" data-info="files">
+                        <i class="fa-regular fa-file fa-fw"></i>
+                        <span>files</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="plans.html" class="black transition capitalize flex align position" data-info="plans">
+                        <i class="fa-regular fa-credit-card fa-fw"></i>
+                        <span>plans</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <header>
+                <div class="container flex justify align">
+                    <div class="form flex align">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="type a keyword">
+                    </div>
+                    <div class="notification flex align">
+                        <span class="position block">
+                            <i class="fa-regular fa-bell fa-lg"></i>
+                        </span>
+                        <img src="/images/avatar.png" alt="avatar">
+                    </div>
+                </div>
+            </header>
+            <h1 class="head capitalize position fit">setting</h1>
+            <div class="boxes flex justify">
+                <div class="box">
+                    <h2 class="capitalize">site control</h2>
+                    <p class="capitalize">control the website if there is maintenance</p>
+                    <div class="row flex align justify">
+                        <div class="text">
+                            <h4 class="capitalize">website control</h4>
+                            <span class="block capitalize">open/close website and type the reason</span>
+                        </div>
+                        <label>
+                            <input type="checkbox" class="toggle" checked>
+                            <div class="switch position"></div>
+                        </label>
+                    </div>
+                    <div class="form">
+                        <textarea placeholder="close message content"></textarea>
+                    </div>
+                </div>
+                <div class="box">
+                    <h2 class="capitalize">general info</h2>
+                    <p class="capitalize">general information about your account</p>
+                    <div class="form flex">
+                        <label class="capitalize">first name</label>
+                        <input type="text" placeholder="first name">
+                        <label class="capitalize">last name</label>
+                        <input type="text" placeholder="last name">
+                        <label class="capitalize">email</label>
+                        <div class="email flex align justify">
+                            <input type="email" placeholder="o@nn.sa" readonly>
+                            <input type="submit" value="change">
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h2 class="capitalize">security info</h2>
+                    <p class="capitalize">security information about your account</p>
+                    <div class="rows">
+                        <div class="row flex align justify">
+                            <div class="text">
+                                <h4 class="capitalize">password</h4>
+                                <span class="block capitalize">last change on 25/10/2022</span>
+                            </div>
+                            <a href="#" class="but block capitalize fit">change</a>
+                        </div>
+                        <div class="row flex align justify">
+                            <div class="text">
+                                <h4 class="capitalize">two-factor authentication</h4>
+                                <span class="block capitalize">enable/disable the feature</span>
+                            </div>
+                            <label>
+                                <input type="checkbox" class="toggle" checked>
+                                <div class="switch position"></div>
+                            </label>
+                        </div>
+                        <div class="row flex align justify">
+                            <div class="text">
+                                <h4 class="capitalize">devices</h4>
+                                <span class="block capitalize">check the login devices list</span>
+                            </div>
+                            <a href="#" class="l-b capitalize fit block">devices</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h2 class="capitalize">social info</h2>
+                    <p class="capitalize">social media information</p>
+                    <div class="rows">
+                        <div class="row flex align">
+                            <i class="fa-brands fa-twitter center-flex c-grey"></i>
+                            <input type="text" placeholder="twitter username">
+                        </div>
+                        <div class="row flex align">
+                            <i class="fa-brands fa-facebook-f center-flex c-grey"></i>
+                            <input type="text" placeholder="facebook username">
+                        </div>
+                        <div class="row flex align">
+                            <i class="fa-brands fa-linkedin center-flex c-grey"></i>
+                            <input type="text" placeholder="linkedin username">
+                        </div>
+                        <div class="row flex align">
+                            <i class="fa-brands fa-youtube center-flex c-grey"></i>
+                            <input type="text" placeholder="youtube username">
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h2 class="capitalize">widgets control</h2>
+                    <p class="capitalize">show/hide widgets</p>
+                    <div class="in flex align">
+                        <input type="checkbox" checked class="tog" id="one">
+                        <label for="one" class="capitalize position">quick draft</label>
+                    </div>
+                    <div class="in flex align">
+                        <input type="checkbox" checked id="two" class="tog">
+                        <label for="two" class="capitalize position">yearly target</label>
+                    </div>
+                    <div class="in flex align">
+                        <input type="checkbox" id="three" class="tog" checked>
+                        <label for="three" class="capitalize position">tickets statistics</label>
+                    </div>
+                    <div class="in flex align">
+                        <input type="checkbox" id="four" class="tog" checked>
+                        <label for="four" class="capitalize position">latest news</label>
+                    </div>
+                    <div class="in flex align">
+                        <input type="checkbox" class="tog" id="five">
+                        <label for="five" class="capitalize position">latest tasks</label>
+                    </div>
+                    <div class="in flex align">
+                        <input type="checkbox" id="six" checked class="tog">
+                        <label for="six" class="capitalize position">top search items</label>
+                    </div>
+                </div>
+                <div class="box">
+                    <h2 class="capitalize">backup manager</h2>
+                    <p class="capitalize">control backup and location</p>
+                    <div class="inp flex align">
+                        <input type="radio" class="tog" id="o" name="dai" checked>
+                        <label for="o" class="capitalize position">daily</label>
+                    </div>
+                    <div class="inp flex align">
+                        <input type="radio" class="tog" id="t" name="dai">
+                        <label for="t" class="capitalize position">weekly</label>
+                    </div>
+                    <div class="inp flex align">
+                        <input type="radio" class="tog" id="th" name="dai">
+                        <label for="th" class="capitalize position">monthly</label>
+                    </div>
+                    <div class="fot flex align text-c justify">
+                        <div class="input flex align">
+                            <input type="radio" class="toggle" id="o-1" name="ser">
+                            <div class="ca-rd">
+                                <label for="o-1">
+                                    <i class="fa-solid fa-server d-block mb-10"></i>
+                                    <span class="block capitalize">megaman</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="input flex align">
+                            <input type="radio" class="toggle" id="t-2" name="ser" checked>
+                            <div class="ca-rd">
+                                <label for="t-2">
+                                    <i class="fa-solid fa-server d-block mb-10"></i>
+                                    <span class="block capitalize">zero</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="input flex align">
+                            <input type="radio" class="toggle" id="th-3" name="ser">
+                            <div class="ca-rd">
+                                <label for="th-3">
+                                    <i class="fa-solid fa-server d-block mb-10"></i>
+                                    <span class="block capitalize">sigma</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/frame.css">
+    <link rel="stylesheet" href="/css/master.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Dashboard</title>
+</head>
+<body>
+    <section class="flex">
+        <div class="side">
+            <h3 class="position capitalize text-c fit">elzero</h3>
+            <ul class="list">
+                <li>
+                    <a href="index.html" class="black transition capitalize flex align position" data-info="dashboard">
+                        <i class="fa-regular fa-chart-bar fa-fw"></i>
+                        <span>dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="setting.html" class="black transition capitalize flex align position" data-info="setting">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <span>setting</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html" class="black transition capitalize flex align position" data-info="profile">
+                        <i class="fa-regular fa-user fa-fw"></i>
+                        <span>profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="projects.html" class="black transition capitalize flex align position" data-info="projects">
+                        <i class="fa-solid fa-diagram-project fa-fw"></i>
+                        <span>projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="courses.html" class="black transition capitalize flex align position" data-info="courses">
+                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                        <span>courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="friends.html" class="black transition capitalize flex align position" data-info="friends">
+                        <i class="fa-regular fa-circle-user fa-fw"></i>
+                        <span>friends</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="files.html" class="black transition capitalize flex align position" data-info="files">
+                        <i class="fa-regular fa-file fa-fw"></i>
+                        <span>files</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="plans.html" class="black transition capitalize flex align position" data-info="plans">
+                        <i class="fa-regular fa-credit-card fa-fw"></i>
+                        <span>plans</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <header>
+                <div class="container flex justify align">
+                    <div class="form flex align">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="type a keyword">
+                    </div>
+                    <div class="notification flex align">
+                        <span class="position block">
+                            <i class="fa-regular fa-bell fa-lg"></i>
+                        </span>
+                        <img src="/images/avatar.png" alt="avatar">
+                    </div>
+                </div>
+            </header>
+            <h1 class="head capitalize position fit">dashboard</h1>
+            <div class="boxes">
+                <div class="box">
+                    <div class="heading position flex justify">
+                        <div class="text">
+                            <h1 class="capitalize">welcome</h1>
+                            <span class="block capitalize">elzero</span>
+                        </div>
+                        <div class="image">
+                            <img src="/images/welcome.png" alt="image">
+                        </div>
+                        <div class="image-po">
+                            <img src="/images/avatar.png" alt="avatar">
+                        </div>
+                    </div>
+                    <div class="body flex align justify position">
+                        <div class="block text-c">
+                            <p class="capitalize">osama elzero</p>
+                            <span class="block capitalize">developer</span>
+                        </div>
+                        <div class="block text-c">
+                            <p>80</p>
+                            <span class="block capitalize">projects</span>
+                        </div>
+                        <div class="block text-c">
+                            <p>$8500</p>
+                            <span class="block capitalize">earned</span>
+                        </div>
+                    </div>
+                    <a href="#" class="but block capitalize fit">profile</a>
+                </div>
+                <div class="box">
+                    <h2 class="capitalize">quick draft</h2>
+                    <p class="capitalize">write a draft for your ideas</p>
+                    <div class="form">
+                        <input type="text" placeholder="title">
+                        <textarea placeholder="your thought"></textarea>
+                        <input type="submit" value="send" class="fit block">
+                    </div>
+                </div>
+                <div class="box">
+                    <h2 class="capitalize">yearly target</h2>
+                    <span class="block">targets of the year</span>
+                    <div class="row flex align">
+                        <span class="block position">
+                            <i class="fa-solid fa-dollar-sign fa-lg c-blue"></i>
+                        </span>
+                        <div class="column">
+                            <p class="capitalize">money</p>
+                            <strong class="block">$20.000</strong>
+                            <div class="line">
+                                <span class="col position block" style="width: 80%" data-info="80%"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row flex align">
+                        <span class="block position">
+                            <i class="fa-solid fa-code fa-lg c-orange"></i>
+                        </span>
+                        <div class="column">
+                            <p class="capitalize">projects</p>
+                            <strong class="block">24</strong>
+                            <div class="line">
+                                <span class="col position block" style="width: 52%" data-info="52%"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row flex align">
+                        <span class="block position">
+                            <i class="fa-solid fa-user fa-lg c-green"></i>
+                        </span>
+                        <div class="column">
+                            <p class="capitalize">team</p>
+                            <strong class="block">12</strong>
+                            <div class="line">
+                                <span class="col position block" style="width: 75%" data-info="75%"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h2 class="capitalize">tickets statistic</h2>
+                    <span class="block">everything about support tickets</span>
+                    <div class="cards flex align justify">
+                        <div class="card">
+                            <i class="fa-regular fa-rectangle-list fa-2x mb-10 c-orange"></i>
+                            <strong class="block">2500</strong>
+                            <span class="block capitalize">total</span>
+                        </div>
+                        <div class="card">
+                            <i class="fa-solid fa-spinner fa-2x mb-10 c-blue"></i>
+                            <strong class="block">500</strong>
+                            <span class="block capitalize">pending</span>
+                        </div>
+                        <div class="card">
+                            <i class="fa-regular fa-circle-check fa-2x mb-10 c-green"></i>
+                            <strong class="block">1900</strong>
+                            <span class="block capitalize">closed</span>
+                        </div>
+                        <div class="card">
+                            <i class="fa-regular fa-rectangle-xmark fa-2x mb-10 c-red"></i>
+                            <strong class="block">100</strong>
+                            <span class="block capitalize">deleted</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h2 class="capitalize">latest news</h2>
+                    <div class="rows">
+                        <div class="row flex align justify">
+                            <div class="r-s flex align">
+                                <img src="/images/news-01.png" alt="image">
+                                <div class="text">
+                                    <h4 class="capitalize">created sass section</h4>
+                                    <p class="capitalize">new sass examples & tutorial</p>
+                                </div>
+                            </div>
+                            <span class="capitalize block">3 days ago</span>
+                        </div>
+                        <div class="row flex align justify">
+                            <div class="r-s flex align">
+                                <img src="/images/news-02.png" alt="image">
+                                <div class="text">
+                                    <h4 class="capitalize">changed the design</h4>
+                                    <p class="capitalize">a brand new website design</p>
+                                </div>
+                            </div>
+                            <span class="capitalize block">5 days ago</span>
+                        </div>
+                        <div class="row flex align justify">
+                            <div class="r-s flex align">
+                                <img src="/images/news-03.png" alt="image">
+                                <div class="text">
+                                    <h4 class="capitalize">team increased</h4>
+                                    <p class="capitalize">3 developer joined the team</p>
+                                </div>
+                            </div>
+                            <span class="capitalize block">7 days ago</span>
+                        </div>
+                        <div class="row flex align justify">
+                            <div class="r-s flex align">
+                                <img src="/images/news-04.png" alt="image">
+                                <div class="text">
+                                    <h4 class="capitalize">added payment getaway</h4>
+                                    <p class="capitalize">many new payment getaways added</p>
+                                </div>
+                            </div>
+                            <span class="capitalize block">9 days ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h2 class="capitalize">latest tasks</h2>
+                    <div class="rows">
+                        <div class="row flex align justify">
+                            <div class="text">
+                                <h3 class="capitalize">record one new videos</h3>
+                                <p class="capitalize">Record Python Create Exe Project</p>
+                            </div>
+                            <button class="transition"><i class="fa-regular fa-trash-can delete"></i></button>
+                        </div>
+                        <div class="row flex align justify">
+                            <div class="text">
+                                <h3 class="capitalize">write articles</h3>
+                                <p class="capitalize">Write Low Level vs High Level Languages</p>
+                            </div>
+                            <button class="transition"><i class="fa-regular fa-trash-can delete"></i></button>
+                        </div>
+                        <div class="row flex align justify">
+                            <div class="text">
+                                <h3 class="capitalize">finch projects</h3>
+                                <p class="capitalize">Publish Academy Programming Project</p>
+                            </div>
+                            <button class="transition"><i class="fa-regular fa-trash-can delete"></i></button>
+                        </div>
+                        <div class="row flex align justify">
+                            <div class="text">
+                                <h3 class="capitalize">attend the meeting</h3>
+                                <p class="capitalize">Attend The Project Business Analysis Meeting</p>
+                            </div>
+                            <button><i class="fa-regular fa-trash-can delete"></i></button>
+                        </div>
+                        <div class="row flex align justify">
+                            <div class="text">
+                                <h3 class="capitalize">finish lesson</h3>
+                                <p class="capitalize">Finish Teaching Flex Box</p>
+                            </div>
+                            <button class="transition"><i class="fa-regular fa-trash-can delete"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h2 class="capitalize">top search items</h2>
+                    <div class="up-row flex align justify">
+                        <span class="block capitalize">keyword</span>
+                        <span class="block capitalize">search count</span>
+                    </div>
+                    <div class="rows">
+                        <div class="row flex align justify"> 
+                            <p class="capitalize">programming</p>
+                            <span class="block">220</span>
+                        </div>
+                        <div class="row flex align justify">
+                            <p class="capitalize">javascript</p>
+                            <span class="block">180</span>
+                        </div>
+                        <div class="row flex align justify">
+                            <p class="capitalize">pHP</p>
+                            <span class="block">160</span>
+                        </div>
+                        <div class="row flex align justify">
+                            <p class="capitalize">code</p>
+                            <span class="block">145</span>
+                        </div>
+                        <div class="row flex align justify">
+                            <p class="capitalize">design</p>
+                            <span class="block">110</span>
+                        </div>
+                        <div class="row flex align justify">
+                            <p class="capitalize">logic</p>
+                            <span class="block">125</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h2 class="capitalize">latest upload</h2>
+                    <div class="rows">
+                        <div class="row flex align justify">
+                            <div class="r-s flex align">
+                                <img src="/images/pdf.svg" alt="logo">
+                                <div class="text">
+                                    <h4>my-file.pdf</h4>
+                                    <span class="capitalize">elzero</span>
+                                </div>
+                            </div>
+                            <span class="but block">2.9mb</span>
+                        </div>
+                        <div class="row flex align justify">
+                            <div class="r-s flex align">
+                                <img src="/images/avi.svg" alt="logo">
+                                <div class="text">
+                                    <h4>my-videos.file.avi</h4>
+                                    <span class="capitalize">admin</span>
+                                </div>
+                            </div>
+                            <span class="but block">4.9mb</span>
+                        </div>
+                        <div class="row flex align justify">
+                            <div class="r-s flex align">
+                                <img src="/images/psd.svg" alt="logo">
+                                <div class="text">
+                                    <h4>my-psd-file.pdf</h4>
+                                    <span class="capitalize">osama</span>
+                                </div>
+                            </div>
+                            <span class="but block">4.5mb</span>
+                        </div>
+                        <div class="row flex align justify">
+                            <div class="r-s flex align">
+                                <img src="/images/zip.svg" alt="logo">
+                                <div class="text">
+                                    <h4>my-zip-file.pdf</h4>
+                                    <span class="capitalize">user</span>
+                                </div>
+                            </div>
+                            <span class="but block">8.9mb</span>
+                        </div>
+                        <div class="row flex align justify">
+                            <div class="r-s flex align">
+                                <img src="/images/dll.svg" alt="logo">
+                                <div class="text">
+                                    <h4>my-dll.file.pdf</h4>
+                                    <span class="capitalize">admin</span>
+                                </div>
+                            </div>
+                            <span class="but block">4.9mb</span>
+                        </div>
+                        <div class="row flex align justify">
+                            <div class="r-s flex align">
+                                <img src="/images/eps.svg" alt="logo">
+                                <div class="text">
+                                    <h4>my-ebs-file.pdf</h4>
+                                    <span class="capitalize">designer</span>
+                                </div>
+                            </div>
+                            <span class="but block">8.9mb</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box position">
+                    <h2 class="capitalize">last project progress</h2>
+                    <ul class="list position">
+                        <li class="position capitalize">got the project</li>
+                        <li class="position capitalize">started the project</li>
+                        <li class="position capitalize">the project about to finish</li>
+                        <li class="position capitalize">test the project</li>
+                        <li class="position capitalize">finish the project and get money</li>
+                    </ul>
+                    <div class="image">
+                        <img src="/images/project.png" alt="image-plane">
+                    </div>
+                </div>
+                <div class="box">
+                    <h2 class="capitalize">reminders</h2>
+                    <ul class="list">
+                        <li class="position">
+                            <h4 class="capitalize">check my tasks list</h4>
+                            <span class="block">28/09/2022 - 12:00am</span>
+                        </li>
+                        <li class="position">
+                            <h4 class="capitalize">check my projects</h4>
+                            <span class="block">26/10/2022 - 12:00am</span>
+                        </li>
+                        <li class="position">
+                            <h4 class="capitalize">call all my clients</h4>
+                            <span class="block">05/11/2022 - 12:00am</span>
+                        </li>
+                        <li class="position">
+                            <h4 class="capitalize">finish the development workshop</h4>
+                            <span class="block">20/12/2022 - 12:00am</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h2 class="capitalize">latest post</h2>
+                    <div class="head flex align">
+                        <img src="/images/avatar.png" alt="avatar">
+                        <div class="text">
+                            <h4 class="capitalize">osama elzero</h4>
+                            <p class="capitalize">
+                                about 3 hours ago
+                            </p>
+                        </div>
+                    </div>
+                    <div class="body">
+                        You Can Fool All Of The People Some Of The Time, And Some Of The People All Of The Time, But You Can't Fool All Of The People All Of The Time.
+                    </div>
+                    <div class="footer flex align justify">
+                        <div class="left-side l-s flex align">
+                            <i class="fa-regular fa-heart"></i>
+                            <span>1.8K</span>
+                        </div>
+                        <div class="right-side l-s flex align">
+                            <i class="fa-regular fa-comments"></i>
+                            <span>500</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h2 class="capitalize">social media stats</h2>
+                    <div class="rows">
+                        <div class="row flex align justify">
+                            <div class="icon flex align">
+                                <i class="fa-brands fa-twitter fa-2x"></i>
+                                <p class="capitalize">90K followers</p>
+                            </div>
+                            <span class="block">follow</span>
+                        </div>
+                        <div class="row flex align justify">
+                            <div class="icon flex align">
+                                <i class="fa-brands fa-facebook-f fa-2x"></i>
+                                <p class="capitalize">2m like</p>
+                            </div>
+                            <span class="block">like</span>
+                        </div>
+                        <div class="row flex align justify">
+                            <div class="icon flex align">
+                                <i class="fa-brands fa-youtube fa-2x"></i>
+                                <p class="capitalize">1m subs</p>
+                            </div>
+                            <span class="block">subscribes</span>
+                        </div>
+                        <div class="row flex align justify">
+                            <div class="icon flex align">
+                                <i class="fa-brands fa-linkedin fa-2x"></i>
+                                <p class="capitalize">70K followers</p>
+                            </div>
+                            <span class="block">follow</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects">
+                <h2 class="capitalize">Projects</h2>
+                <div class="responsive-table">
+                  <table>
+                        <thead>
+                        <tr>
+                            <td>Name</td>
+                            <td>Finish Date</td>
+                            <td>Client</td>
+                            <td>Price</td>
+                            <td>Team</td>
+                            <td>Status</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Ministry Wikipedia</td>
+                            <td>10 May 2022</td>
+                            <td>Ministry</td>
+                            <td>$5300</td>
+                            <td>
+                            <img decoding="async" src="/images/team-01.png" alt="avatar" />
+                            <img decoding="async" src="/images/team-02.png" alt="avatar" />
+                            <img decoding="async" src="/images/team-03.png" alt="avatar" />
+                            <img decoding="async" src="/images/team-05.png" alt="avatar" />
+                            </td>
+                            <td>
+                            <span class="label-1">Pending</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Elzero Shop</td>
+                            <td>12 Oct 2021</td>
+                            <td>Elzero Company</td>
+                            <td>$1500</td>
+                            <td>
+                            <img decoding="async" src="/images/team-01.png" alt="avatar" />
+                            <img decoding="async" src="/images/team-03.png" alt="avatar" />
+                            <img decoding="async" src="/images/team-05.png" alt="avatar" />
+                            </td>
+                            <td><span  class="label-2">In Progress</span></td>
+                        </tr>
+                        <tr>
+                            <td>Bouba App</td>
+                            <td>05 Sep 2021</td>
+                            <td>Bouba</td>
+                            <td>$800</td>
+                            <td>
+                            <img decoding="async" src="/images/team-01.png" alt="avatar" />
+                            <img decoding="async" src="/images/team-03.png" alt="avatar" />
+                            </td>
+                            <td><span  class="label-3">Completed</span></td>
+                        </tr>
+                        <tr>
+                            <td>Mahmoud Website</td>
+                            <td>22 May 2021</td>
+                            <td>Mahmoud</td>
+                            <td>$600</td>
+                            <td>
+                            <img decoding="async" src="/images/team-01.png" alt="avatar" />
+                            <img decoding="async" src="/images/team-03.png" alt="avatar" />
+                            </td>
+                            <td><span class="label-4">Completed</span></td>
+                        </tr>
+                        <tr>
+                            <td>Sayed Website</td>
+                            <td>24 May 2021</td>
+                            <td>Sayed</td>
+                            <td>$300</td>
+                            <td>
+                            <img decoding="async" src="/images/team-01.png" alt="avatar" />
+                            <img decoding="async" src="/images/team-02.png" alt="avatar" />
+                            </td>
+                            <td><span class="label-5">Rejected</span></td>
+                        </tr>
+                        <tr>
+                            <td>Arena Application</td>
+                            <td>01 Mar 2021</td>
+                            <td>Arena Company</td>
+                            <td>$2600</td>
+                            <td>
+                            <img decoding="async" src="/images/team-01.png" alt="avatar" />
+                            <img decoding="async" src="/images/team-02.png" alt="avatar" />
+                            <img decoding="async" src="/images/team-03.png" alt="avatar" />
+                            <img decoding="async" src="/images/team-05.png" alt="avatar" />
+                            </td>
+                            <td><span class="label-6">Completed</span></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+              </div>
+        </div>
+    </section>
+</body>
+</html>

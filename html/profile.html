@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/frame.css">
+    <link rel="stylesheet" href="/css/profile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Profile</title>
+</head>
+<body>
+    <section class="flex">
+        <div class="side">
+            <h3 class="position capitalize text-c fit">elzero</h3>
+            <ul class="list">
+                <li>
+                    <a href="index.html" class="black transition capitalize flex align position" data-info="dashboard">
+                        <i class="fa-regular fa-chart-bar fa-fw"></i>
+                        <span>dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="setting.html" class="black transition capitalize flex align position" data-info="setting">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <span>setting</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html" class="black transition capitalize flex align position" data-info="profile">
+                        <i class="fa-regular fa-user fa-fw"></i>
+                        <span>profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="projects.html" class="black transition capitalize flex align position" data-info="projects">
+                        <i class="fa-solid fa-diagram-project fa-fw"></i>
+                        <span>projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="courses.html" class="black transition capitalize flex align position" data-info="courses">
+                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                        <span>courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="friends.html" class="black transition capitalize flex align position" data-info="friends">
+                        <i class="fa-regular fa-circle-user fa-fw"></i>
+                        <span>friends</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="files.html" class="black transition capitalize flex align position" data-info="files">
+                        <i class="fa-regular fa-file fa-fw"></i>
+                        <span>files</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="plans.html" class="black transition capitalize flex align position" data-info="plans">
+                        <i class="fa-regular fa-credit-card fa-fw"></i>
+                        <span>plans</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <header>
+                <div class="container flex justify align">
+                    <div class="form flex align">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="type a keyword">
+                    </div>
+                    <div class="notification flex align">
+                        <span class="position block">
+                            <i class="fa-regular fa-bell fa-lg"></i>
+                        </span>
+                        <img src="/images/avatar.png" alt="avatar">
+                    </div>
+                </div>
+            </header>
+            <h1 class="head capitalize position fit">profile</h1>
+            <div class="upper-box">
+                <div class="cont flex align">
+                    <div class="l-s text-c">
+                        <img src="/images/avatar.png" alt="avatar">
+                        <h2 class="capitalize">osama elzero</h2>
+                        <p class="capitaliz">level 2</p>
+                        <div class="progress flex">
+                            <div class="prog">
+                                <span class="b block" style="width: 70%"></span>
+                            </div>
+                        </div>
+                        <div class="rating flex">
+                            <i class="fa-solid fa-star c-orange fs-13"></i>
+                            <i class="fa-solid fa-star c-orange fs-13"></i>
+                            <i class="fa-solid fa-star c-orange fs-13"></i>
+                            <i class="fa-solid fa-star c-orange fs-13"></i>
+                            <i class="fa-solid fa-star c-orange fs-13"></i>
+                        </div>
+                        <span class="block capitalize">550 rating</span>
+                    </div>
+                    <div class="body">
+                        <div class="rows flex wrap">
+                            <div class="row position">
+                                <p class="capitalize h-d">general information</p>
+                                <div class="line flex align justify text-c">
+                                    <p class="capitalize"><span>full name:</span>osama elzero</p>
+                                    <p class="capitalize"><span>gender:</span>male</p>
+                                    <p class="capitalize"><span>country:</span>egypt</p>
+                                </div>
+                                <label for="r-o">
+                                    <input type="checkbox" id="r-o" checked class="toggle">
+                                    <div class="chick position"></div>
+                                </label>
+                            </div>
+                            <div class="row position">
+                                <p class="capitalize h-d">personal information</p>
+                                <div class="line flex align justify text-c">
+                                    <p class="capitalize"><span>email:</span>o@gmail</p>
+                                    <p class="capitalize"><span>phone:</span>01012345678</p>
+                                    <p class="capitalize"><span>date of birth:</span>1/11/1999</p>
+                                </div>
+                                <label for="r-t">
+                                    <input type="checkbox" id="r-t" class="toggle">
+                                    <div class="chick position"></div>
+                                </label>
+                            </div>
+                            <div class="row position">
+                                <p class="capitalize h-d">jop information</p>
+                                <div class="line flex align justify text-c">
+                                    <p class="capitalize"><span>title:</span>full stack developer</p>
+                                    <p class="capitalize"><span>programmer language:</span>c++</p>
+                                    <p class="capitalize"><span>years of experience:</span>1+</p>
+                                </div>
+                                <label for="r-th">
+                                    <input type="checkbox" id="r-th" checked class="toggle">
+                                    <div class="chick position"></div>
+                                </label>
+                            </div>
+                            <div class="row">
+                                <p class="capitalize h-d">billing information</p>
+                                <div class="line flex align justify text-c">
+                                    <p class="capitalize"><span>payment method:</span>paypal</p>
+                                    <p class="capitalize"><span>email:</span>ynoor@gmail.com</p>
+                                    <p class="capitalize"><span>subscription:</span>monthly</p>
+                                </div>
+                                <label for="r-f">
+                                    <input type="checkbox" id="r-f" class="toggle">
+                                    <div class="chick position"></div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lower flex justify">
+                <div class="box l">
+                    <h2 class="capitalze">my skills</h2>
+                    <p class="capitalize">completed skills list</p>
+                    <div class="row flex">
+                        <span class="block capitalize">html</span>
+                        <span class="block capitalize">pugjs</span>
+                        <span class="block capitalize">hAML</span>
+                    </div>
+                    <div class="row flex">
+                        <span class="block capitalize">css</span>
+                        <span class="block capitalize">sass</span>
+                        <span class="block capitalize">stylus</span>
+                    </div>
+                    <div class="row flex">
+                        <span class="block capitalize">javascript</span>
+                        <span class="block capitalize">typescript</span>
+                    </div>
+                    <div class="row flex">
+                        <span class="block capitalize">vuejs</span>
+                        <span class="block capitalize">reactjs</span>
+                    </div>
+                    <div class="row flex">
+                        <span class="block capitalize">jest</span>
+                        <span class="block capitalize">jasmine</span>
+                    </div>
+                    <div class="row flex">
+                        <span class="block capitalize">php</span>
+                        <span class="block capitalize">laravel</span>
+                    </div>
+                    <div class="row flex">
+                        <span class="block capitalize">python</span>
+                        <span class="block capitalize">django</span>
+                    </div>
+                </div>
+                <div class="box r">
+                    <h2 class="capitalize">latest activities</h2>
+                    <p class="capitalize">latest activities done by the user</p>
+                    <div class="line flex align justify">
+                        <div class="bod flex align">
+                            <div class="image">
+                                <img src="/images/activity-01.png" alt="avatar">
+                            </div>
+                            <div class="text">
+                                <h4 class="capitalize">store</h4>
+                                <p class="capitalize">bought the mastering python course</p>
+                            </div>
+                        </div>
+                        <div class="s-s">
+                            <span class="block">18:10</span>
+                            <span class="block capitalize">yesterday</span>
+                        </div>
+                    </div>
+                    <div class="line flex align justify">
+                        <div class="bod flex align">
+                            <div class="image">
+                                <img src="/images/activity-02.png" alt="avatar">
+                            </div>
+                            <div class="text">
+                                <h4 class="capitalize">academy</h4>
+                                <p class="capitalize">got the php certificate</p>
+                            </div>
+                        </div>
+                        <div class="s-s">
+                            <span class="block">16:05</span>
+                            <span class="block capitalize">yesterday</span>
+                        </div>
+                    </div>
+                    <div class="line flex align justify">
+                        <div class="bod flex align">
+                            <div class="image">
+                                <img src="/images/activity-03.png" alt="avatar">
+                            </div>
+                            <div class="text">
+                                <h4 class="capitalize">badges</h4>
+                                <p class="capitalize">unlocked the 10 skills badge</p>
+                            </div>
+                        </div>
+                        <div class="s-s">
+                            <span class="block">18:05</span>
+                            <span class="block capitalize">yesterday</span>
+                        </div>
+                    </div>
+                    <div class="line flex align justify">
+                        <div class="bod flex align">
+                            <div class="image">
+                                <img src="/images/activity-01.png" alt="avatar">
+                            </div>
+                            <div class="text">
+                                <h4 class="capitalize">store</h4>
+                                <p class="capitalize">bought the typescript course</p>
+                            </div>
+                        </div>
+                        <div class="s-s">
+                            <span class="block">12:05</span>
+                            <span class="block capitalize">yesterday</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+</body>
+</html>

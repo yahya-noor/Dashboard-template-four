@@ -1,0 +1,516 @@
+body{
+    background-color: #f1f5f9;
+}
+section .side{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #fff;
+    width: 240px;
+    padding: 30px 15px;
+}
+@media(max-width: 767px){
+    section .side{
+        width: 60px;
+        padding: 10px;
+    }
+}
+section .side h3{
+    padding-bottom: 12px;
+    font-size: 24px;
+    margin: 0 auto 12px;
+}
+@media(max-width: 767px){
+    section .side h3{
+        font-size: 14px;
+    }
+}
+@media(min-width: 768px){
+    section .side h3::before,
+    section .side h3::after{
+        content: "";
+        position: absolute;
+    }
+    section .side h3::before{
+        width: 100%;
+        height: 2px;
+        background-color: #000;
+        bottom: 0;
+        left: 0;
+    }
+    section .side h3::after{
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background-color: #000;
+        border: 4px solid #fff;
+        left: 50%;
+        bottom: -9px;
+        transform: translateX(-50%);
+    }
+}
+section .side ul.list{
+    margin-top: 30px;
+}
+@media(max-width: 767px){
+    section .side ul.list{
+        margin-top: 15px;
+    }
+}
+section .side ul.list > li{
+    padding: 3px 0;
+}
+section .side ul.list > li > a{
+    font-size: 15px;
+    padding: 12px;
+}
+section .side ul.list > li > a span{
+    margin-left: 5px;
+}
+@media(max-width: 767px){
+    section .side ul.list > li > a span{
+        display: none;
+    }
+}
+section .side ul.list > li:nth-child(2) > a,
+section .side ul.list > li:not(:nth-child(2)) > a:hover{
+    background-color: #f1f5f9;
+    border-radius: 5px;
+}
+@media(max-width: 767px){
+    section .side ul.list > li > a::before{
+        content: attr(data-info);
+        position: absolute;
+        font-size: 8px;
+        text-transform: capitalize;
+        width: fit-content;
+        padding: 10px;
+        background-color: #fff;
+        color: #000;
+        font-weight: bold;
+        right: calc(100% + 10px);
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 5px;
+        opacity: 0;
+        transition: 0.5s linear;
+        z-index: 2;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    section .side ul.list > li > a:hover::before{
+        left: calc(100% + 2px);
+        opacity: 1;
+    }
+}
+section .content{
+    overflow: hidden;
+    width: 100%;
+}
+section .content header{
+    padding: 15px;
+    background-color: #fff;
+}
+section .content header .container .form i{
+    transform: translateX(20px);
+    color: #eee;
+}
+section .content header .container .form input{
+    border: 1px solid #eee;
+    padding: 8px;
+    border-radius: 5px;
+}
+section .content header .container .form input::placeholder{
+    padding-left: 16px;
+    text-transform: capitalize;
+}
+section .content header .container .form input:focus{
+    outline: none;
+}
+section .content header .container .form input:focus::placeholder{
+    opacity: 0;
+}
+section .content header .container .notification span::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: var(--red-color);
+    border-radius: 50%;
+    top: -5px;
+    right: 0;
+}
+section .content header .container .notification img{
+    width: 30px;
+    margin-left: 10px;
+}
+section .content h1.head{
+    padding: 15px 15px 15px;
+    margin-bottom: 15px;
+    font-size: 33px;
+}
+@media(max-width: 767px){
+    section .content h1.head{
+        font-size: 20px;
+    }
+}
+section .content h1.head::before{
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    bottom: 0;
+    left: 15px;
+    background-image: linear-gradient(to right, #000 30%, #fff 70%);
+}
+section .content .boxes{
+    padding: 0 15px;
+    flex-wrap: wrap;
+}
+@media(max-width: 1199px){
+    section .content .boxes{
+        flex-direction: column;
+    }
+}
+section .content .boxes .box{
+    flex-basis: 49%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 7px;
+    margin-bottom: 25px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+section .content .boxes .box h2{
+    margin-bottom: 6px;
+}
+section .content .boxes .box h2 + p{
+    color: #444;
+}
+section .content .boxes .box:first-child .row{
+    margin: 25px 0;
+}
+section .content .boxes .box:first-child .row span{
+    color: #444;
+    font-size: 13px;
+    margin-top: 3px;
+}
+section .content .boxes .box:first-child .row .toggle{
+    appearance: none;
+    display: none;
+}
+section .content .boxes .box:first-child .row .switch{
+    width: 80px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #ccc;
+    transition: 0.5s linear;
+    cursor: pointer;
+}
+section .content .boxes .box:first-child .row .toggle:checked + .switch{
+    background-color: var(--blue-color);
+}
+section .content .boxes .box:first-child .row .switch::before{
+    content: "\f00d";
+    font-family: FONTAWESOME;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    left: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ccc;
+    transition: 0.5s linear;
+}
+section .content .boxes .box:first-child .row .toggle:checked + .switch::before{
+    content: "\f00c";
+    left: 50px;
+    color: var(--blue-color);
+}
+section .content .boxes .box:first-child textarea{
+    border: 1px solid transparent;
+    background-color: #f1f5f9;
+    padding: 15px;
+    min-height: 180px;
+    width: 100%;
+    border-radius: 5px;
+}
+section .content .boxes .box:first-child textarea::placeholder{
+    text-transform: capitalize;
+}
+section .content .boxes .box:first-child textarea:focus{
+    outline: none;
+}
+section .content .boxes .box:nth-child(2) .form{
+    margin: 30px 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+section .content .boxes .box:nth-child(2) .form label,
+section .content .boxes .box:nth-child(2) .form input{
+    margin-bottom: 10px;
+}
+section .content .boxes .box:nth-child(2) .form label{
+    color: #cbc9c9;
+}
+section .content .boxes .box:nth-child(2) .form input:not(input[type="submit"]){
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 12px;
+}
+section .content .boxes .box:nth-child(2) .form input:not(input[type="submit"])::placeholder{
+    text-transform: capitalize;
+}
+section .content .boxes .box:nth-child(2) .form input:not(input[type="submit"]):focus{
+    outline: none;
+}
+section .content .boxes .box:nth-child(2) .form .email input[type="email"]{
+    flex: 1;
+    width: 100%;
+    margin-right: 30px;
+    background-color: #eee;
+    cursor: no-drop;
+}
+section .content .boxes .box:nth-child(2) .form .email input[type="submit"]{
+    border: none;
+    color: var(--blue-color);
+    text-transform: capitalize;
+    background-color: transparent;
+    font-size: 18px;
+    cursor: pointer;
+}
+section .content .boxes .box:nth-child(3) .rows{
+    margin: 30px 0 20px;
+}
+section .content .boxes .box:nth-child(3) .rows .row{
+    margin: 10px 0;
+    padding: 15px 0;
+}
+@media(max-width: 767px){
+    section .content .boxes .box:nth-child(3) .rows .row{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+section .content .boxes .box:nth-child(3) .rows .row:not(:last-child){
+    border-bottom: 1px solid #eee;
+}
+section .content .boxes .box:nth-child(3) .rows .row .text span{
+    color: #444;
+    margin-top: 3px;
+}
+@media(max-width: 767px){
+    section .content .boxes .box:nth-child(3) .rows .row .text{
+        margin-bottom: 15px;
+    }
+}
+section .content .boxes .box:nth-child(3) .rows .row a.but{
+    background-color: var(--blue-color);
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+}
+section .content .boxes .box:nth-child(3) .rows .row .toggle{
+    appearance: none;
+    display: none;
+}
+section .content .boxes .box:nth-child(3) .rows .row .switch{
+    width: 80px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #ccc;
+    transition: 0.5s linear;
+    cursor: pointer;
+}
+section .content .boxes .box:nth-child(3) .rows .row .toggle:checked + .switch{
+    background-color: var(--blue-color);
+}
+section .content .boxes .box:nth-child(3) .rows .row .switch::before{
+    content: "\f00d";
+    font-family: FONTAWESOME;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    left: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ccc;
+    transition: 0.5s linear
+}
+section .content .boxes .box:nth-child(3) .rows .row .toggle:checked + .switch::before{
+    content: "\f00c";
+    left: 50px;
+    color: var(--blue-color);
+}
+section .content .boxes .box:nth-child(3) .rows .row a.l-b{
+    padding: 10px;
+    border-radius: 4px;
+    color: #000;
+    background-color: #eee;
+}
+section .content .boxes .box:nth-child(4) .rows{
+    margin: 30px 0 20px;
+}
+section .content .boxes .box:nth-child(4) .rows .row{
+    padding: 10px 0;
+}
+section .content .boxes .box:nth-child(4) .rows .row input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+    padding-left: 15px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+section .content .boxes .box:nth-child(4) .rows .row input::placeholder{
+    text-transform: capitalize;
+}
+section .content .boxes .box:nth-child(4) .rows .row input:focus{
+    outline: none;
+}
+section .content .boxes .box:nth-child(4) .rows .row i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 40px;
+    width: 40px;
+    color: #b8b6b6;
+    border: 1px solid #ccc;
+    border-right-color: transparent;
+    cursor: pointer;
+}
+section .content .boxes .box:nth-last-child(2) p{
+    margin-bottom: 20px;
+}
+section .content .boxes .box:nth-last-child(2) .in{
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+section .content .boxes .box:nth-last-child(2) .in .tog{
+    appearance: none;
+    display: none;
+}
+section .content .boxes .box:nth-last-child(2) .in label{
+    font-size: 17px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+section .content .boxes .box:nth-last-child(2) .in label::before{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    left: -26px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.5s linear;
+}
+section .content .boxes .box:nth-last-child(2) .in .tog:checked + label::before{
+    background-color: var(--blue-color);
+    border-color: transparent;
+}
+section .content .boxes .box:nth-last-child(2) .in label::after{
+    content: "";
+    position: absolute;
+    font-family: FONTAWESOME;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -22px;
+    font-size: 14px;
+    transition: 0.5s linear;
+}
+section .content .boxes .box:nth-last-child(2) .in .tog:checked + label::after{
+    content: "\f00c";
+    transform: skew(1)
+}
+section .content .boxes .box:last-child p{
+    margin-bottom: 30px;
+}
+section .content .boxes .box:last-child .inp{
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+section .content .boxes .box:last-child .inp .tog{
+    appearance: none;
+}
+section .content .boxes .box:last-child .inp label{
+    font-size: 17px;
+    margin-left: 5px;
+}
+section .content .boxes .box:last-child .inp label::before{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    left: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.5s linear;
+}
+section .content .boxes .box:last-child .inp .tog:checked + label::before{
+    border-color: var(--blue-color);
+}
+section .content .boxes .box:last-child .inp label::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--blue-color);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -20px;
+    opacity: 0;
+    transition: 0.5s linear;
+}
+section .content .boxes .box:last-child .inp .tog:checked + label::after{
+    opacity: 1;
+}
+section .content .boxes .box:last-child .fot{
+    margin-top: 25px;
+    padding-top: 25px;
+    border-top: 1px solid #eee;
+}
+@media(max-width: 767px){
+    section .content .boxes .box:last-child .fot{
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+}
+section .content .boxes .box:last-child .fot .input .toggle{
+    appearance: none;
+}
+section .content .boxes .box:last-child .fot .input .ca-rd{
+    border: 2px solid #eee;
+    width: 150px;
+    max-width: 100%;
+    padding: 10px 0;
+    border-radius: 4px;
+    transition: 0.5s linear;
+}
+section .content .boxes .box:last-child .fot .input .ca-rd label{
+    cursor: pointer;
+}
+section .content .boxes .box:last-child .fot .input .toggle:checked + .ca-rd{
+    border-color: var(--blue-color);
+}
